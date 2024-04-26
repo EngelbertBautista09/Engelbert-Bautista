@@ -64,6 +64,7 @@ function displayQuiz(quiz) {
         console.log("Subject: ", quiz[i].subject);
         for (let j = 0; j < quiz[i].quiz.length; j++) {
             console.log("Question " + (j + 1) + ": ", quiz[i].quiz[j].question);
+            console.log("Options: ", quiz[i].quiz[j].options.join(", "));
             console.log("Answer: ", quiz[i].quiz[j].answer);
             console.log("-----------------------");
         }
